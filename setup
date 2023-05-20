@@ -128,9 +128,9 @@ repo(){
 
 	# Get git repo if the installer is runned standalone
 
-	[[ ! "RemoMusicBot" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
+	[[ ! "RemoMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
 
-	git clone https://github.com/TeamRemo/RemoMusicBot &&  cd RemoMusicBot
+	git clone https://github.com/TeamRemo/RemoMusicBot &&  cd RemoMusic
 
 }
 
