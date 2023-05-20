@@ -7,7 +7,7 @@
 
 <h4><p align="center"> ⍏ Rᴇᴍᴏ ☊ Mᴜsɪᴄ Bᴏᴛ  </p></h4>
 
-<p align="center">⍏ Rᴇᴍᴏ ☊ Mᴜsɪᴄ Bᴏᴛ is a modular bot running on python3 with anime theme and have a lot features.</p>
+<p align="center">⍏ Rᴇᴍᴏ ☊ Mᴜsɪᴄ Bᴏᴛ Melody 🎶 Telegram Bot.</p>
 
 <p align="center">
 
