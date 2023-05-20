@@ -1,10 +1,10 @@
 {
 
-    "name": "Group Music Bot",
+    "name": "Remo Music Bot",
 
     "description": "A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
 
-    "logo": "https://te.legra.ph/file/798b7275e58d09ac6b095.jpg",
+    "logo": "https://te.legra.ph/file/da6c7c88a35c41ec6b579.jpg",
 
     "keywords": [
 
@@ -14,7 +14,7 @@
 
     "bot",
 
-    "Shizuka",
+    "Remo",
 
     "telegram-music-bot",
 
@@ -72,7 +72,7 @@
 
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Ramdi's database for you.",
 
-        "value": "mongodb+srv://Harsh73:Harsh@cluster0.wvwcg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "value": "",
 
         "required": true
 
@@ -82,7 +82,7 @@
 
         "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
 
-        "value": "⁪⁬Music Bot",
+        "value": "⁪⁬Remo Music Bot",
 
         "required": true
 
@@ -92,7 +92,7 @@
 
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
 
-        "value": "5052969674",
+        "value": "1546009313",
 
         "required": true
 
@@ -112,7 +112,7 @@
 
         "description": "Your Support Group link ",
 
-        "value": "https://t.me/Team_BOT_Support",
+        "value": "https://t.me/Remo_Support",
 
         "required": false
 
@@ -122,7 +122,7 @@
 
         "description": "Your Updates Channel link",
 
-        "value": "https://t.me/Team_BOT_Update",
+        "value": "https://t.me/Team_Remo",
 
         "required": false
 
@@ -182,7 +182,7 @@
 
         "description": "If you dont know this, Leave as it is",
 
-        "value": "https://github.com/LOG-AFK-xD/Yukki-Heroku",
+        "value": "https://github.com/TeamRemo/RemoMusicBot",
 
         "required": true
 
