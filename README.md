@@ -1,17 +1,17 @@
 # RemoMusicBot
 <p align="center">
 
-  <img src="https://graph.org/file/c3c11ffa3a9594ab23b86.jpg">
+  <img src="https://te.legra.ph/file/da6c7c88a35c41ec6b579.jpg">
 
 </p>
 
-<h4><p align="center"> ⍏ Dᴀɴԍᴇʀous ⳻᷼⳺ Roʙoт 𓁍 </p></h4>
+<h4><p align="center"> ⍏ Rᴇᴍᴏ ☊ Mᴜsɪᴄ Bᴏᴛ  </p></h4>
 
-<p align="center">⍏ Dᴀɴԍᴇʀous ⳻᷼⳺ Roʙoт 𓁍 is a modular bot running on python3 with anime theme and have a lot features.</p>
+<p align="center">⍏ Rᴇᴍᴏ ☊ Mᴜsɪᴄ Bᴏᴛ is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
 
-<a href="https://t.me/Dangerous_Robot"> <img src="https://img.shields.io/badge/Dᴀɴԍᴇʀous-Roʙoт-blue?&logo=telegram" alt="Dᴀɴԍᴇʀous Roʙoт on Telegram" /> </a><br>
+<a href="https://t.me/Bae_Music_Bot"> <img src="https://img.shields.io/badge/Rasathi-MusicBot-blue?&logo=telegram" alt="Rasathii Bae on Telegram" /> </a><br>
 
 <a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.13-white?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
 
@@ -21,9 +21,9 @@
 
 <a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.5-purple?&style=flat-round&logo=python" alt="Python" /> </a><br>
 
-<a href="https://GitHub.com/TeamRemo/Tst"> <img src="https://img.shields.io/badge/Maintained-Yash-yellow.svg" alt="Maintenance" /> </a><br>
+<a href="https://GitHub.com/TeamRemo/RemoMusicBot"> <img src="https://img.shields.io/badge/Maintained-Yash-yellow.svg" alt="Maintenance" /> </a><br>
 
-<a href="https://github.com/kennedy-ex/EmikoRobot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
+<a href="https://github.com/TeamRemo/RemoMusicBot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
 
 <a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg?style=flat-round" alt="PRs" /> </a>
 
@@ -41,27 +41,27 @@
 
 - Full Tutorial - [![Full Tutorial](https://img.shields.io/badge/Watch%20Now-blue)](https://youtu.be/GMaYMYhf_Vk)
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TeamRemo/Tst"> <img 
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TeamRemo/Remo_MusicBot"> <img 
 
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 ```
 
-This Bot is Created by Team Remo, If your kanging this without fork at least give a credit to get a smile of my hard work. 
+This Bot is Created by Team Remo, If your Kɪɴᴅɪɴɢ this without fork at least give a credit to get a smile of my hard work. 
 
-- EmikoRobot
+- TᴇᴀᴍYᴜᴋᴋɪ
 
-- SaitamaRobot 
+- FᴀʟʟᴇɴRᴏʙᴏᴛ 
 
-- WilliamButcherBot
+- TᴇᴀᴍRᴇᴍᴏ
 
 ```
 
 ### Support
 
-<a href="https://t.me/Team_Remo"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
+<a href="https://t.me/Remo_Support"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
 
-<a href="https://t.me/badboybiografia"> <img src="https://img.shields.io/badge/Update-Channel-blue?&logo=telegram" alt="Update Channel" /> </a><br>
+<a href="https://t.me/Team_Remo"> <img src="https://img.shields.io/badge/Update-Channel-blue?&logo=telegram" alt="Update Channel" /> </a><br>
 
 </p>
 
