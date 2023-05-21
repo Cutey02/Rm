@@ -130,7 +130,7 @@ repo(){
 
 	[[ ! "RemoMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
 
-	git clone https://github.com/TeamRemo/RemoMusicBot &&  cd RemoMusic
+	git clone https://github.com/TeamRemo/RemoMusic &&  cd RemoMusic
 
 }
 
