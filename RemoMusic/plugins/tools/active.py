@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database.memorydatabase import (
+from RemoMusic import app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils.database.memorydatabase import (
     get_active_chats,
     get_active_video_chats,
 )
