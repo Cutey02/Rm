@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
 from RemoMusic import app
-from RemoMusic.core.call import Shizuka
+from RemoMusic.core.call import Remo
 from RemoMusic.utils import bot_sys_stats
 from RemoMusic.utils.decorators.language import language
 
