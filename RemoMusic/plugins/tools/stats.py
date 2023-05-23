@@ -12,10 +12,10 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.core.userbot import assistants
-from ShizukaXMusic.misc import SUDOERS, pymongodb
-from ShizukaXMusic.plugins import ALL_MODULES
+from RemoMusic import YouTube, app
+from RemoMusic.core.userbot import assistants
+from RemoMusic.misc import SUDOERS, pymongodb
+from RemoMusic.plugins import ALL_MODULES
 from ShizukaXMusic.utils.database import (
     get_global_tops,
     get_particulars,
@@ -26,8 +26,8 @@ from ShizukaXMusic.utils.database import (
     get_top_chats,
     get_topp_users,
 )
-from ShizukaXMusic.utils.decorators.language import language, languageCB
-from ShizukaXMusic.utils.inline.stats import (
+from RemoMusic.utils.decorators.language import language, languageCB
+from RemoMusic.utils.inline.stats import (
     back_stats_buttons,
     back_stats_markup,
     get_stats_markup,
@@ -171,7 +171,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🌹 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Best_FriendsFor_Ever) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f"🌹 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Remo_support) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                 else:
                     msg += f"🌹 [{title}](https://www.youtube.com/watch?v={items}) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
 
@@ -257,7 +257,7 @@ async def overall_stats(client, CallbackQuery, _):
     else:
         ass = "No"
     cm = config.CLEANMODE_DELETE_MINS
-    text = f"""🌹 **ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
+    text = f"""🌹 **Rᴇᴍᴏ ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
 
 🌹 **ᴍᴏᴅᴜʟᴇs:** {mod}
 🌹 **ᴄʜᴀᴛs:** {served_chats} 
@@ -335,7 +335,7 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f"""🌹 **ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
+    text = f"""🌹 **Rᴇᴍᴏ ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
 
        <b><u>🌹 ʜᴀʀᴅᴡᴀʀᴇ</b><u/>
 🌹 **ᴍᴏᴅᴜʟᴇs:** {mod}
