@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import set_video_limit
-from ShizukaXMusic.utils.decorators.language import language
+from RemoMusic import app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils.database import set_video_limit
+from RemoMusic.utils.decorators.language import language
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 
