@@ -4,10 +4,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database.memorydatabase import get_video_limit
-from ShizukaXMusic.utils.formatters import convert_bytes
+from RemoMusic import app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils.database.memorydatabase import get_video_limit
+from RemoMusic.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
