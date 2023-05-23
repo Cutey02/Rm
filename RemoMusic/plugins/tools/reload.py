@@ -5,12 +5,12 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils.database import get_authuser_names, get_cmode
-from ShizukaXMusic.utils.decorators import ActualAdminCB, AdminActual, language
-from ShizukaXMusic.utils.formatters import alpha_to_int
+from RemoMusic import app
+from RemoMusic.core.call import Shizuka
+from RemoMusic.misc import db
+from RemoMusic.utils.database import get_authuser_names, get_cmode
+from RemoMusic.utils.decorators import ActualAdminCB, AdminActual, language
+from RemoMusic.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
