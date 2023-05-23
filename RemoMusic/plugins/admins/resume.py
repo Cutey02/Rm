@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from RemoMusic import app
-from RemoMusic.core.call import Shizuka
+from RemoMusic.core.call import Remo
 from RemoMusic.utils.database import is_music_playing, music_on
 from RemoMusic.utils.decorators import AdminRightsCheck
 
