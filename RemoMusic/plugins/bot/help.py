@@ -5,12 +5,12 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, helpers
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils import help_pannel
-from ShizukaXMusic.utils.database import get_lang, is_commanddelete_on
-from ShizukaXMusic.utils.decorators.language import LanguageStart, languageCB
-from ShizukaXMusic.utils.inline.help import help_back_markup, private_help_panel
+from RemoMusic import app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils import help_pannel
+from RemoMusic.utils.database import get_lang, is_commanddelete_on
+from RemoMusic.utils.decorators.language import LanguageStart, languageCB
+from RemoMusic.utils.inline.help import help_back_markup, private_help_panel
 
 ### Command
 HELP_COMMAND = get_command("HELP_COMMAND")
