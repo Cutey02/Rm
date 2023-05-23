@@ -9,11 +9,11 @@ import config
 from config import BANNED_USERS
 from config.config import OWNER_ID, MUSIC_BOT_NAME
 from strings import get_command, get_string
-from ShizukaXMusic import Telegram, YouTube, app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.plugins.play.playlist import del_plist_msg
-from ShizukaXMusic.plugins.sudo.sudoers import sudoers_list
-from ShizukaXMusic.utils.database import (
+from Remousic import Telegram, YouTube, app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.plugins.play.playlist import del_plist_msg
+from RemoMusic.plugins.sudo.sudoers import sudoers_list
+from RemoMusic.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -23,9 +23,9 @@ from ShizukaXMusic.utils.database import (
     is_on_off,
     is_served_private_chat,
 )
-from ShizukaXMusic.utils.decorators.language import LanguageStart
-from ShizukaXMusic.utils.inline import help_pannel, private_panel, start_pannel
-from ShizukaXMusic.utils.command import commandpro
+from RemoMusic.utils.decorators.language import LanguageStart
+from RemoMusic.utils.inline import help_pannel, private_panel, start_pannel
+from RemoMusic.utils.command import commandpro
 
 loop = asyncio.get_running_loop()
 
