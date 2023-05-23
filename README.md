@@ -55,7 +55,7 @@ This Bot is Created by Team Remo, If your Kɪɴᴅɪɴɢ this without fork at le
 
 - FᴀʟʟᴇɴRᴏʙᴏᴛ 
 
-- TᴇᴀᴍRᴇᴍᴏ
+- ~•~©√ʙᴀᴅ ʙᴏʏ™
 
 ```
 
