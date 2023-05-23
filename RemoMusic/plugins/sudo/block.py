@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import add_gban_user, remove_gban_user
-from ShizukaXMusic.utils.decorators.language import language
+from RemoMusic import app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils.database import add_gban_user, remove_gban_user
+from RemoMusic.utils.decorators.language import language
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")
