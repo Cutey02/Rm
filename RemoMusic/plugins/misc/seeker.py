@@ -3,10 +3,10 @@ import asyncio
 from pyrogram.types import InlineKeyboardMarkup
 
 from strings import get_string
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils.database import get_active_chats, get_lang, is_music_playing
-from ShizukaXMusic.utils.formatters import seconds_to_min
-from ShizukaXMusic.utils.inline import stream_markup_timer, telegram_markup_timer
+from RemoMusic.misc import db
+from RemoMusic.utils.database import get_active_chats, get_lang, is_music_playing
+from RemoMusic.utils.formatters import seconds_to_min
+from RemoMusic.utils.inline import stream_markup_timer, telegram_markup_timer
 
 from ..admins.callback import wrong
 
