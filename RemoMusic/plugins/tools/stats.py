@@ -16,7 +16,7 @@ from RemoMusic import YouTube, app
 from RemoMusic.core.userbot import assistants
 from RemoMusic.misc import SUDOERS, pymongodb
 from RemoMusic.plugins import ALL_MODULES
-from ShizukaXMusic.utils.database import (
+from RemoMusic.utils.database import (
     get_global_tops,
     get_particulars,
     get_queries,
