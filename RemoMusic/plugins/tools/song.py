@@ -14,10 +14,10 @@ from pyrogram.types import (
 
 from config import BANNED_USERS, SONG_DOWNLOAD_DURATION, SONG_DOWNLOAD_DURATION_LIMIT
 from strings import get_command
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.utils.decorators.language import language, languageCB
-from ShizukaXMusic.utils.formatters import convert_bytes
-from ShizukaXMusic.utils.inline.song import song_markup
+from RemoMusic import YouTube, app
+from RemoMusic.utils.decorators.language import language, languageCB
+from RemoMusic.utils.formatters import convert_bytes
+from RemoMusic.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")
