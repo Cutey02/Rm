@@ -1,4 +1,3 @@
-
 import random
 import string
 from ast import ExceptHandler
@@ -10,23 +9,23 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from ShizukaXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.utils import seconds_to_min, time_to_seconds
-from ShizukaXMusic.utils.channelplay import get_channeplayCB
-from ShizukaXMusic.utils.database import is_video_allowed
-from ShizukaXMusic.utils.decorators.language import languageCB
-from ShizukaXMusic.utils.decorators.play import PlayWrapper
-from ShizukaXMusic.utils.formatters import formats
-from ShizukaXMusic.utils.inline.play import (
+from RemoMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from RemoMusic.core.call import Shizuka
+from RemoMusic.utils import seconds_to_min, time_to_seconds
+from RemiMusic.utils.channelplay import get_channeplayCB
+from RemoMusic.utils.database import is_video_allowed
+from RemoMusic.utils.decorators.language import languageCB
+from RemoMusic.utils.decorators.play import PlayWrapper
+from RemoMusic.utils.formatters import formats
+from RemoMusic.utils.inline.play import (
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from ShizukaXMusic.utils.inline.playlist import botplaylist_markup
-from ShizukaXMusic.utils.logger import play_logs
-from ShizukaXMusic.utils.stream.stream import stream
+from RemoMusic.utils.inline.playlist import botplaylist_markup
+from RemoMusic.utils.logger import play_logs
+from RemoMusic.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
