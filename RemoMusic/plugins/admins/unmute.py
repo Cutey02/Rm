@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.utils.database import is_muted, mute_off
-from ShizukaXMusic.utils.decorators import AdminRightsCheck
+from RemoMusic import app
+from RemoMusic.core.call import Remo
+from RemoMusic.utils.database import is_muted, mute_off
+from RemoMusic.utils.decorators import AdminRightsCheck
 
 # Commands
 UNMUTE_COMMAND = get_command("UNMUTE_COMMAND")
