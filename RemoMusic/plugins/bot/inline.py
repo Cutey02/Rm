@@ -6,8 +6,8 @@ from pyrogram.types import (
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import BANNED_USERS, MUSIC_BOT_NAME
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.inlinequery import answer
+from RemoMusic import app
+from RemoMusic.utils.inlinequery import answer
 
 
 @app.on_inline_query(~BANNED_USERS)
