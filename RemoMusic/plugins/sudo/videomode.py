@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 import config
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import add_off, add_on
-from ShizukaXMusic.utils.decorators.language import language
+from RemoMusic import app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils.database import add_off, add_on
+from RemoMusic.utils.decorators.language import language
 
 # Commands
 VIDEOMODE_COMMAND = get_command("VIDEOMODE_COMMAND")
