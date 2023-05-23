@@ -4,10 +4,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils import AdminRightsCheck, seconds_to_min
+from RemoMusic import YouTube, app
+from RemoMusic.core.call import Remo
+from RemoMusic.misc import db
+from RemoMusic.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
