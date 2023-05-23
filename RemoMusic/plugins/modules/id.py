@@ -1,4 +1,4 @@
-from ShizukaXMusic import app
+from RemoMusic import app
 from pyrogram import filters
 
 
