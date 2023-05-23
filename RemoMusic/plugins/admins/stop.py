@@ -3,11 +3,11 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
+from RemoMusic import app
 
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.utils.database import set_loop
-from ShizukaXMusic.utils.decorators import AdminRightsCheck
+from RemoMusic.core.call import Remo
+from RemoMusic.utils.database import set_loop
+from RemoMusic.utils.decorators import AdminRightsCheck
 
 # Commands
 STOP_COMMAND = get_command("STOP_COMMAND")
