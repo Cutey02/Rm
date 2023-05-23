@@ -12,10 +12,10 @@ from config import (
     TELEGRAM_VIDEO_URL,
     adminlist,
 )
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.misc import SUDOERS, db
-from ShizukaXMusic.utils.database import (
+from RemoMusic import YouTube, app
+from RemoMusic.core.call import Shizuka
+from RemoMusic.misc import SUDOERS, db
+from RemoMusic.utils.database import (
     is_active_chat,
     is_music_playing,
     is_muted,
@@ -26,11 +26,11 @@ from ShizukaXMusic.utils.database import (
     mute_on,
     set_loop,
 )
-from ShizukaXMusic.utils.decorators.language import languageCB
-from ShizukaXMusic.utils.formatters import seconds_to_min
-from ShizukaXMusic.utils.inline.play import panel_markup_1, stream_markup, telegram_markup
-from ShizukaXMusic.utils.stream.autoclear import auto_clean
-from ShizukaXMusic.utils.thumbnails import gen_thumb
+from RemoMusic.utils.decorators.language import languageCB
+from RemoMusic.utils.formatters import seconds_to_min
+from RemoMusic.utils.inline.play import panel_markup_1, stream_markup, telegram_markup
+from RemoMusic.utils.stream.autoclear import auto_clean
+from RemoMusic.utils.thumbnails import gen_thumb
 
 wrong = {}
 
@@ -106,14 +106,14 @@ async def del_back_playlist(client, CallbackQuery, _):
             return await CallbackQuery.answer(_["admin_1"], show_alert=True)
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Shizuka.pause_stream(chat_id)
+        await Remo.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_2"].format(mention))
     elif command == "Resume":
         if await is_music_playing(chat_id):
             return await CallbackQuery.answer(_["admin_3"], show_alert=True)
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await Shizuka.resume_stream(chat_id)
+        await Remo.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_4"].format(mention))
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
@@ -125,14 +125,14 @@ async def del_back_playlist(client, CallbackQuery, _):
             return await CallbackQuery.answer(_["admin_5"], show_alert=True)
         await CallbackQuery.answer()
         await mute_on(chat_id)
-        await Shizuka.mute_stream(chat_id)
+        await Remo.mute_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_6"].format(mention))
     elif command == "Unmute":
         if not await is_muted(chat_id):
             return await CallbackQuery.answer(_["admin_7"], show_alert=True)
         await CallbackQuery.answer()
         await mute_off(chat_id)
-        await Shizuka.unmute_stream(chat_id)
+        await Remo.unmute_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_8"].format(mention))
     elif command == "Loop":
         await CallbackQuery.answer()
@@ -171,14 +171,14 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_10"].format(mention), disable_web_page_preview=True
                 )
                 try:
-                    return await Shizuka.stop_stream(chat_id)
+                    return await Remo.stop_stream(chat_id)
                 except:
                     return
         except:
             try:
                 await CallbackQuery.edit_message_text(f"» ᴛʀᴀᴄᴋ sᴋɪᴩᴩᴇᴅ ʙʏ {mention} !")
                 await CallbackQuery.message.reply_text(_["admin_10"].format(mention))
-                return await Shizuka.stop_stream(chat_id)
+                return await Remo.stop_stream(chat_id)
             except:
                 return
         await CallbackQuery.answer()
@@ -196,7 +196,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_11"].format(title)
                 )
             try:
-                await Shizuka.skip_stream(chat_id, link, video=status)
+                await Remo.skip_stream(chat_id, link, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(_["call_9"])
             button = telegram_markup(_, chat_id)
@@ -226,7 +226,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_9"])
             try:
-                await Shizuka.skip_stream(chat_id, file_path, video=status)
+                await Remo.skip_stream(chat_id, file_path, video=status)
             except Exception:
                 return await mystic.edit_text(_["call_9"])
             button = stream_markup(_, videoid, chat_id)
@@ -245,7 +245,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await Shizuka.skip_stream(chat_id, videoid, video=status)
+                await Remo.skip_stream(chat_id, videoid, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(_["call_9"])
             button = telegram_markup(_, chat_id)
@@ -259,7 +259,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await CallbackQuery.edit_message_text(txt)
         else:
             try:
-                await Shizuka.skip_stream(chat_id, queued, video=status)
+                await Remo.skip_stream(chat_id, queued, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(_["call_9"])
             if videoid == "telegram":
