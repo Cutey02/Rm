@@ -41,7 +41,7 @@ from RemoMusic.utils.database import (
 )
 from RemoMusic.utils.exceptions import AssistantErr
 from RemoMusic.utils.inline.play import stream_markup, telegram_markup
-from ShizukaXMusic.utils.stream.autoclear import auto_clean
+from RemoMusic.utils.stream.autoclear import auto_clean
 from RemoMusic.utils.thumbnails import gen_thumb
 
 autoend = {}
