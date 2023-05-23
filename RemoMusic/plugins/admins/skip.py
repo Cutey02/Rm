@@ -4,14 +4,14 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils.database import get_loop
-from ShizukaXMusic.utils.decorators import AdminRightsCheck
-from ShizukaXMusic.utils.inline.play import stream_markup, telegram_markup
-from ShizukaXMusic.utils.stream.autoclear import auto_clean
-from ShizukaXMusic.utils.thumbnails import gen_thumb
+from RemoMusic import YouTube, app
+from RemoMusic.core.call import Remo
+from RemoMusic.misc import db
+from RemoMusic.utils.database import get_loop
+from RemoMusic.utils.decorators import AdminRightsCheck
+from RemoMusic.utils.inline.play import stream_markup, telegram_markup
+from RemoMusic.utils.stream.autoclear import auto_clean
+from RemoMusic.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
