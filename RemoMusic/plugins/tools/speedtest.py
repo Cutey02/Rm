@@ -2,8 +2,8 @@ import asyncio
 import speedtest
 from pyrogram import filters
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
+from RemoMusic import app
+from RemoMusic.misc import SUDOERS
 
 # Commands
 SPEEDTEST_COMMAND = get_command("SPEEDTEST_COMMAND")
@@ -30,7 +30,7 @@ async def speedtest_function(client, message):
     m = await message.reply_text("💫 ᴛʀʏɪɴɢ ᴛᴏ ᴄʜᴇᴄᴋ ᴜᴩʟᴏᴀᴅ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ sᴩᴇᴇᴅ")
     loop = asyncio.get_event_loop()
     result = await loop.run_in_executor(None, testspeed, m)
-    output = f"""**sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs**
+    output = f"""**Rᴇᴍᴏ sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs**
     
 <u>**ᴄʟɪᴇɴᴛ:**</u>
 **__ɪsᴩ:__** {result['client']['isp']}
