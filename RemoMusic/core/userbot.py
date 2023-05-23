@@ -69,7 +69,7 @@ class Userbot(Client):
             )
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.one.id}`\n❄ ɴᴀᴍᴇ : {self.one.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.one.username}"
+                    config.LOG_GROUP_ID, f"**» Rᴇᴍᴏ Mᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ :**\n\n😎 ɪᴅ : `{self.one.id}`\n🥰 ɴᴀᴍᴇ : {self.one.name}\n💖 ᴜsᴇʀɴᴀᴍᴇ : @{self.one.username}"
                 )
             except:
                 LOGGER(__name__).error(
@@ -80,7 +80,7 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("badboybiografia")
-                await self.two.join_chat("remo_editz")
+                await self.two.join_chat("Remo_Support")
             except:
                 pass
             assistants.append(2)
@@ -97,7 +97,7 @@ class Userbot(Client):
                 self.two.name = get_me.first_name
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.two.id}`\n❄ ɴᴀᴍᴇ : {self.two.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.two.username}"
+                    config.LOG_GROUP_ID, f"**» Rᴇᴍᴏ Mᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ :**\n\n😎 ɪᴅ : `{self.two.id}`\n🥰 ɴᴀᴍᴇ : {self.two.name}\n💖 ᴜsᴇʀɴᴀᴍᴇ : @{self.two.username}"
                 )
             except:
                 LOGGER(__name__).error(
@@ -110,7 +110,7 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("Remo_editz")
+                await self.three.join_chat("Remo_Support")
                 await self.three.join_chat("badboybiografia")
             except:
                 pass
@@ -128,7 +128,7 @@ class Userbot(Client):
                 self.three.name = get_me.first_name
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛʜʀᴇᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.three.id}`\n❄ ɴᴀᴍᴇ : {self.three.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.three.username}"
+                    config.LOG_GROUP_ID, f"**» Rᴇᴍᴏ Mᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ᴛʜʀᴇᴇ sᴛᴀʀᴛᴇᴅ :**\n\n😎 ɪᴅ : `{self.three.id}`\n🥰 ɴᴀᴍᴇ : {self.three.name}\n💖 ᴜsᴇʀɴᴀᴍᴇ : @{self.three.username}"
                 )
             except:
                 LOGGER(__name__).error(
@@ -141,8 +141,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("remo_editz")
                 await self.four.join_chat("badboybiografia")
+                await self.four.join_chat("Remo_Support")
             except:
                 pass
             assistants.append(4)
@@ -159,7 +159,7 @@ class Userbot(Client):
                 self.four.name = get_me.first_name
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ғᴏᴜʀ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.four.id}`\n❄ ɴᴀᴍᴇ : {self.four.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.four.username}"
+                    config.LOG_GROUP_ID, f"**» Rᴇᴍᴏ Mᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ғᴏᴜʀ sᴛᴀʀᴛᴇᴅ :**\n\n😎 ɪᴅ : `{self.four.id}`\n🥰 ɴᴀᴍᴇ : {self.four.name}\n💖 ᴜsᴇʀɴᴀᴍᴇ : @{self.four.username}"
                 )
             except:
                 LOGGER(__name__).error(
@@ -172,8 +172,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("remo_editz")
                 await self.five.join_chat("badboybiografia")
+                await self.five.join_chat("Remo_Support")
             except:
                 pass
             assistants.append(5)
@@ -190,7 +190,7 @@ class Userbot(Client):
                 self.five.name = get_me.first_name
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ғɪᴠᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.five.id}`\n❄ ɴᴀᴍᴇ : {self.five.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.five.username}"
+                    config.LOG_GROUP_ID, f"**» Rᴇᴍᴏ Mᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ғɪᴠᴇ sᴛᴀʀᴛᴇᴅ :**\n\n😎 ɪᴅ : `{self.five.id}`\n🥰 ɴᴀᴍᴇ : {self.five.name}\n💖 ᴜsᴇʀɴᴀᴍᴇ : @{self.five.username}"
                 )
             except:
                 LOGGER(__name__).error(
