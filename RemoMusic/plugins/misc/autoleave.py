@@ -3,7 +3,7 @@ from datetime import datetime
 
 import config
 from RemoMusic import app
-from ShizukaXMusic.core.call import Remo, autoend
+from RemoMusic.core.call import Remo, autoend
 from RemoMusic.utils.database import get_client, is_active_chat, is_autoend
 
 
