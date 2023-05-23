@@ -15,15 +15,15 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import HAPP, SUDOERS, XCB
-from ShizukaXMusic.utils.database import (
+from RemoMusic import app
+from RemoMusic.misc import HAPP, SUDOERS, XCB
+from RemoMusic.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from ShizukaXMusic.utils.decorators.language import language
-from ShizukaXMusic.utils.pastebin import Shizukabin
+from RemoMusic.utils.decorators.language import language
+from RemoMusic.utils.pastebin import Remobin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
