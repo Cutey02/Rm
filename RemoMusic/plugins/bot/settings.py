@@ -9,8 +9,8 @@ from pyrogram.types import (
 
 from config import BANNED_USERS, CLEANMODE_DELETE_MINS, MUSIC_BOT_NAME, OWNER_ID
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.database import (
+from RemoMusic import app
+from RemoMusic.utils.database import (
     add_nonadmin_chat,
     cleanmode_off,
     cleanmode_on,
@@ -34,8 +34,8 @@ from ShizukaXMusic.utils.database import (
     suggestion_off,
     suggestion_on,
 )
-from ShizukaXMusic.utils.decorators.admins import ActualAdminCB
-from ShizukaXMusic.utils.decorators.language import language, languageCB
+from RemoMusic.utils.decorators.admins import ActualAdminCB
+from RemoMusic.utils.decorators.language import language, languageCB
 from ShizukaXMusic.utils.inline.settings import (
     audio_quality_markup,
     auth_users_markup,
@@ -44,7 +44,7 @@ from ShizukaXMusic.utils.inline.settings import (
     setting_markup,
     video_quality_markup,
 )
-from ShizukaXMusic.utils.inline.start import private_panel
+from RemoMusic.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
