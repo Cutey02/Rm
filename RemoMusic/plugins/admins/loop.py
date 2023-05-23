@@ -3,9 +3,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.database.memorydatabase import get_loop, set_loop
-from ShizukaXMusic.utils.decorators import AdminRightsCheck
+from RemoMusic import app
+from RemoMusic.utils.database.memorydatabase import get_loop, set_loop
+from RemoMusic.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")
