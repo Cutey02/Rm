@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.utils.database import is_music_playing, music_off
-from ShizukaXMusic.utils.decorators import AdminRightsCheck
+from RemoMusic import app
+from RemoMusic.core.call import Shizuka
+from RemoMusic.utils.database import is_music_playing, music_off
+from RemoMusic.utils.decorators import AdminRightsCheck
 
 # Commands
 PAUSE_COMMAND = get_command("PAUSE_COMMAND")
