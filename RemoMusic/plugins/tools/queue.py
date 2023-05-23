@@ -9,12 +9,12 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils import Shizukabin, get_channeplayCB, seconds_to_min
-from ShizukaXMusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from ShizukaXMusic.utils.decorators.language import language, languageCB
-from ShizukaXMusic.utils.inline import queue_back_markup, queue_markup
+from RemoMusic import app
+from RemoMusic.misc import db
+from RemoMusic.utils import Remobin, get_channeplayCB, seconds_to_min
+from RemoMusic.utils.database import get_cmode, is_active_chat, is_music_playing
+from RemoMusic.utils.decorators.language import language, languageCB
+from RemoMusic.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
