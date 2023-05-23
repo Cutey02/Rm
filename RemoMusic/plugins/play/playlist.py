@@ -7,21 +7,21 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
-from ShizukaXMusic import Carbon, YouTube, app
-from ShizukaXMusic.utils.database import (
+from RemoMusic import Carbon, YouTube, app
+from RemoMusic.utils.database import (
     delete_playlist,
     get_playlist,
     get_playlist_names,
     save_playlist,
 )
-from ShizukaXMusic.utils.decorators.language import language, languageCB
-from ShizukaXMusic.utils.inline.playlist import (
+from RemoMusic.utils.decorators.language import language, languageCB
+from RemoMusic.utils.inline.playlist import (
     botplaylist_markup,
     get_playlist_markup,
     warning_markup,
 )
-from ShizukaXMusic.utils.pastebin import Shizukabin
-from ShizukaXMusic.utils.stream.stream import stream
+from RemoMusic.utils.pastebin import Shizukabin
+from RemoMusic.utils.stream.stream import stream
 
 # Command
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
