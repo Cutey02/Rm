@@ -7,10 +7,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils import get_readable_time
-from ShizukaXMusic.utils.database import (
+from RemoMusic import app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils import get_readable_time
+from RemoMusic.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -18,7 +18,7 @@ from ShizukaXMusic.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from ShizukaXMusic.utils.decorators.language import language
+from RemoMusic.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")
