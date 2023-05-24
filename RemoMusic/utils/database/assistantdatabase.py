@@ -1,77 +1,107 @@
-import asyncio
-import datetime
-import os
 import random
-import string
-import time
-import traceback
 
-import aiofiles
-from pyrogram.errors import (
-    FloodWait,
-    InputUserDeactivated,
-    PeerIdInvalid,
-    UserIsBlocked,
-)
-from protector.brdb import db, dcmdb
+from RemoMusic import userbot
+from RemoMusic.core.mongo import mongodb
 
-# BR Tools
+db = mongodb.assistants
 
-broadcast_ids = {}
+assistantdict = {}
 
 
-async def main_broadcast_handler(m, db):
-    all_users = await db.get_all_users()
-    broadcast_msg = m.reply_to_message
-    while True:
-        broadcast_id = "".join(random.choice(string.ascii_letters) for i in range(3))
-        if not broadcast_ids.get(broadcast_id):
-            break
-    out = await m.reply_text(
-        text="**💡 Bʀᴏᴀᴅᴄᴀsᴛ Sᴛᴀʀᴛᴇᴅ...**\n\n**» Wʜᴇɴ ɪᴛ's ᴅᴏɴᴇ, ʏᴏᴜ'ʟʟ ʙᴇ ɴᴏᴛɪғɪᴇᴅ ʜᴇʀᴇ...!**"
+async def get_client(assistant: int):
+    if int(assistant) == 1:
+        return userbot.one
+    elif int(assistant) == 2:
+        return userbot.two
+    elif int(assistant) == 3:
+        return userbot.three
+    elif int(assistant) == 4:
+        return userbot.four
+    elif int(assistant) == 5:
+        return userbot.five
+
+
+async def set_assistant(chat_id):
+    from RemoMusic.core.userbot import assistants
+
+    ran_assistant = random.choice(assistants)
+    assistantdict[chat_id] = ran_assistant
+    await db.update_one(
+        {"chat_id": chat_id},
+        {"$set": {"assistant": ran_assistant}},
+        upsert=True,
     )
+    userbot = await get_client(ran_assistant)
+    return userbot
 
-    start_time = time.time()
-    total_users = await db.total_users_count()
-    done = 0
-    failed = 0
-    success = 0
-    broadcast_ids[broadcast_id] = dict(
-        total=total_users, current=done, failed=failed, success=success
-    )
-    async with aiofiles.open("broadcast-logs.txt", "w") as broadcast_log_file:
-        async for user in all_users:
-            sts, msg = await send_msg(user_id=int(user["id"]), message=broadcast_msg)
-            if msg is not None:
-                await broadcast_log_file.write(msg)
-            if sts == 200:
-                success += 1
+
+async def get_assistant(chat_id: int) -> str:
+    from RemoMusic.core.userbot import assistants
+
+    assistant = assistantdict.get(chat_id)
+    if not assistant:
+        dbassistant = await db.find_one({"chat_id": chat_id})
+        if not dbassistant:
+            userbot = await set_assistant(chat_id)
+            return userbot
+        else:
+            got_assis = dbassistant["assistant"]
+            if got_assis in assistants:
+                assistantdict[chat_id] = got_assis
+                userbot = await get_client(got_assis)
+                return userbot
             else:
-                failed += 1
-            if sts == 400:
-                await db.delete_user(user["id"])
-            done += 1
-            if broadcast_ids.get(broadcast_id) is None:
-                break
-            else:
-                broadcast_ids[broadcast_id].update(
-                    dict(current=done, failed=failed, success=success)
-                )
-    if broadcast_ids.get(broadcast_id):
-        broadcast_ids.pop(broadcast_id)
-    completed_in = datetime.timedelta(seconds=int(time.time() - start_time))
-    await asyncio.sleep(3)
-    await out.delete()
-    if failed == 0:
-        await m.reply_text(
-            text=f"✅ Bʀᴏᴀᴅᴄᴀsᴛɪɴɢ Cᴏᴍᴘʟᴇᴛᴇᴅ! \n**Completed in:** `{completed_in}` \n\n**Total users:** `{total_users}` \n**Total done:** `{done}` \n**Total success:** `{success}` \n**Total failed:** `{failed}`",
-            quote=True,
-        )
+                userbot = await set_assistant(chat_id)
+                return userbot
     else:
-        await m.reply_document(
-            document="broadcast-logs.txt",
-            caption=f"✅ Bʀᴏᴀᴅᴄᴀsᴛɪɴɢ Cᴏᴍᴘʟᴇᴛᴇᴅ! \n**Completed in:** `{completed_in}`\n\n**Total users:** `{total_users}` \n**Total done:** `{done}` \n**Total success:** `{success}` \n**Total failed:** `{failed}`",
-            quote=True,
-        )
-    os.remove("broadcast-logs.txt")
+        if assistant in assistants:
+            userbot = await get_client(assistant)
+            return userbot
+        else:
+            userbot = await set_assistant(chat_id)
+            return userbot
 
+
+async def set_calls_assistant(chat_id):
+    from RemoMusic.core.userbot import assistants
+
+    ran_assistant = random.choice(assistants)
+    assistantdict[chat_id] = ran_assistant
+    await db.update_one(
+        {"chat_id": chat_id},
+        {"$set": {"assistant": ran_assistant}},
+        upsert=True,
+    )
+    return ran_assistant
+
+
+async def group_assistant(self, chat_id: int) -> int:
+    from RemoMusic.core.userbot import assistants
+
+    assistant = assistantdict.get(chat_id)
+    if not assistant:
+        dbassistant = await db.find_one({"chat_id": chat_id})
+        if not dbassistant:
+            assis = await set_calls_assistant(chat_id)
+        else:
+            assis = dbassistant["assistant"]
+            if assis in assistants:
+                assistantdict[chat_id] = assis
+                assis = assis
+            else:
+                assis = await set_calls_assistant(chat_id)
+    else:
+        if assistant in assistants:
+            assis = assistant
+        else:
+            assis = await set_calls_assistant(chat_id)
+    if int(assis) == 1:
+        return self.one
+    elif int(assis) == 2:
+        return self.two
+    elif int(assis) == 3:
+        return self.three
+    elif int(assis) == 4:
+        return self.four
+    elif int(assis) == 5:
+        return self.five
