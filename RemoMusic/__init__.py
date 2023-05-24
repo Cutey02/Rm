@@ -22,7 +22,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = RemoBot()
+app = RemoMusic()
 
 # Assistant Client
 userbot = Userbot()
