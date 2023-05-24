@@ -1,7 +1,7 @@
 import random
 
-from ShizukaXMusic import userbot
-from ShizukaXMusic.core.mongo import mongodb
+from RemoMusic import userbot
+from RemoMusic.core.mongo import mongodb
 
 db = mongodb.assistants
 
