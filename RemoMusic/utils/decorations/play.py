@@ -2,9 +2,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
 from strings import get_string
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import (
+from RemoMusic import YouTube, app
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils.database import (
     get_cmode,
     get_lang,
     get_playmode,
@@ -13,8 +13,8 @@ from ShizukaXMusic.utils.database import (
     is_commanddelete_on,
     is_served_private_chat,
 )
-from ShizukaXMusic.utils.database.memorydatabase import is_maintenance
-from ShizukaXMusic.utils.inline.playlist import botplaylist_markup
+from RemoMusic.utils.database.memorydatabase import is_maintenance
+from RemoMusic.utils.inline.playlist import botplaylist_markup
 
 
 def PlayWrapper(command):
