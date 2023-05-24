@@ -1,4 +1,4 @@
-bimport random
+import random
 
 from pyrogram.types import InlineKeyboardButton
 
