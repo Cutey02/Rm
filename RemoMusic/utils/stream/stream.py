@@ -5,20 +5,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from ShizukaXMusic import Carbon, YouTube, app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils.database import (add_active_chat,
+from RemoMusic import Carbon, YouTube, app
+from RemoMusic.core.call import Shizuka
+from RemoMusic.misc import db
+from RemoMusic.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from ShizukaXMusic.utils.exceptions import AssistantErr
-from ShizukaXMusic.utils.inline.play import (stream_markup,
+from RemoMusic.utils.exceptions import AssistantErr
+from RemoMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from ShizukaXMusic.utils.inline.playlist import close_markup
-from ShizukaXMusic.utils.pastebin import Shizukabin
-from ShizukaXMusic.utils.stream.queue import put_queue, put_queue_index
-from ShizukaXMusic.utils.thumbnails import gen_thumb
+from RemoMusic.utils.inline.playlist import close_markup
+from RemoMusic.utils.pastebin import Remobin
+from RemoMusic.utils.stream.queue import put_queue, put_queue_index
+from RemoMusic.utils.thumbnails import gen_thumb
 
 
 async def stream(
