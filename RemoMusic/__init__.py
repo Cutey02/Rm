@@ -1,31 +1,28 @@
-from RemoMusic.core.bot import Bot
+from RemoMusic.core.bot import RemoBot
 from RemoMusic.core.dir import dirr
 from RemoMusic.core.git import git
 from RemoMusic.core.userbot import Userbot
 from RemoMusic.misc import dbb, heroku, sudo
+from aiohttp import ClientSession
 
 from .logging import LOGGER
 
-# Directories
+
 dirr()
 
-# Check Git Updates
 git()
 
-# Initialize Memory DB
 dbb()
 
-# Heroku APP
 heroku()
 
-# Load Sudo Users from DB
 sudo()
 
-# Bot Client
-app = RemoMusicBot()
+# Clients
+app = RemoBot()
 
-# Assistant Client
 userbot = Userbot()
+
 
 from .platforms import *
 
@@ -36,3 +33,5 @@ Apple = AppleAPI()
 Resso = RessoAPI()
 SoundCloud = SoundAPI()
 Telegram = TeleAPI()
+
+aiohttpsession = ClientSession()
