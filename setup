@@ -75,8 +75,8 @@ node(){
 
 repo(){
 	# Get git repo if the installer is runned standalone
-	[[ ! "ShizukaXMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
-	git clone https://github.com/its_star_boi/ShizukaXMusic &&  cd ShizukaXMusic
+	[[ ! "RemoMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
+	git clone https://github.com/TeamRemo/RemoMusic &&  cd RemoMusic
 }
 
 
@@ -103,7 +103,7 @@ packages
 node
 repo
 installation
-pprint "\n\n\n\n\nShizuka Music Bot Installation Completed!" "cgreen"
+pprint "\n\n\n\n\nRemo Music Bot Installation Completed!" "cgreen"
 sleep 4
 clear
 
