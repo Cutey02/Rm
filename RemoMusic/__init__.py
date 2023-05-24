@@ -1,4 +1,4 @@
-from RemoMusic.core.bot import RemoMusicbot
+from RemoMusic.core.bot import RemoMusicBot
 from RemoMusic.core.dir import dirr
 from RemoMusic.core.git import git
 from RemoMusic.core.userbot import Userbot
@@ -19,7 +19,7 @@ heroku()
 sudo()
 
 # Clients
-app = RemMusicbot()
+app = RemMusicBot()
 
 userbot = Userbot()
 
