@@ -1,6 +1,6 @@
 from strings import get_string
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import get_lang, is_commanddelete_on, is_maintenance
+from RemoMusic.misc import SUDOERS
+from RemoMusic.utils.database import get_lang, is_commanddelete_on, is_maintenance
 
 
 def language(mystic):
