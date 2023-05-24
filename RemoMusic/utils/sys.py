@@ -2,7 +2,7 @@ import time
 
 import psutil
 
-from ShizukaXMusic.misc import _boot_
+from RemoMusic.misc import _boot_
 
 from .formatters import get_readable_time
 
