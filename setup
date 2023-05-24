@@ -1,5 +1,5 @@
 #!/bin/bash
-### Shizuka Music Bot Installer
+### Remo Music Bot Installer
 
 pprint (){
 	cred='\033[0;31m'
