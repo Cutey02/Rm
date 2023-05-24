@@ -21,9 +21,9 @@
 
 <a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.5-purple?&style=flat-round&logo=python" alt="Python" /> </a><br>
 
-<a href="https://GitHub.com/TeamRemo/RemoMusicBot"> <img src="https://img.shields.io/badge/Maintained-Yash-yellow.svg" alt="Maintenance" /> </a><br>
+<a href="https://GitHub.com/TeamRemo/RemoMusic"> <img src="https://img.shields.io/badge/Maintained-Yash-yellow.svg" alt="Maintenance" /> </a><br>
 
-<a href="https://github.com/TeamRemo/RemoMusicBot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
+<a href="https://github.com/TeamRemo/RemoMusic/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
 
 <a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg?style=flat-round" alt="PRs" /> </a>
 
@@ -44,7 +44,7 @@
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TeamRemo/RemoMusicBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TeamRemo/RemoMusic"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 ```
