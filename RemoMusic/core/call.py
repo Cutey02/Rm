@@ -584,4 +584,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-RemoMusic = Call()
+Remobot = Call()
