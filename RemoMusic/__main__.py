@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from RemoMusic import LOGGER, app, userbot
-from RemoMusic.core.call import Shizuka
+from RemoMusic.core.call import Remo
 from RemoMusic.plugins import ALL_MODULES
 from RemoMusic.utils.database import get_banned_users, get_gbanned
 
