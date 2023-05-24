@@ -3,7 +3,7 @@ from os import path
 
 from yt_dlp import YoutubeDL
 
-from Remo.utils.formatters import seconds_to_min
+from RemoMusicBot.utils.formatters import seconds_to_min
 
 
 class SoundAPI:
