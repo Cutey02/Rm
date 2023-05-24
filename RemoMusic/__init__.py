@@ -19,7 +19,7 @@ heroku()
 sudo()
 
 # Clients
-app = RemMusicBot()
+app = RemoBot()
 
 userbot = Userbot()
 
