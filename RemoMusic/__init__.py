@@ -1,4 +1,4 @@
-from RemoMusic.core.bot import RemoBot
+from RemoMusic.core.bot import RemoMBot
 from RemoMusic.core.dir import dirr
 from RemoMusic.core.git import git
 from RemoMusic.core.userbot import Userbot
