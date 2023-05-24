@@ -38,7 +38,7 @@ async def init():
         importlib.import_module("RemoMusic.plugins" + all_module)
     LOGGER("RemoMusic.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
-    await Shizuka.start()
+    await Remo.start()
     try:
         await Shizuka.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
