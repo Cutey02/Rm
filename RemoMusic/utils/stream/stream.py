@@ -89,7 +89,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Shizuka.join_call(
+                await Remo.join_call(
                     chat_id, original_chat_id, file_path, video=status
                 )
                 await put_queue(
@@ -120,7 +120,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Shizukabin(msg)
+            link = await Remobin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -170,7 +170,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Shizuka.join_call(
+            await Remo.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -224,7 +224,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Shizuka.join_call(
+            await Remo.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -278,7 +278,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Shizuka.join_call(
+            await Remo.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -339,7 +339,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Shizuka.join_call(
+            await Remo.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -391,7 +391,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Shizuka.join_call(
+            await Remo.join_call(
                 chat_id,
                 original_chat_id,
                 link,
