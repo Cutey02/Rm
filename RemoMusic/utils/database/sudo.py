@@ -1,7 +1,7 @@
 
 from typing import Dict, List, Union
 
-from ShizukaXMusic.core.mongo import mongodb
+from RemoMusic.core.mongo import mongodb
 
 sudoersdb = db.sudoers
 
